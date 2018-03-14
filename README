@@ -1,0 +1,25 @@
+Make sure $JAVA_HOME is pointing to where java is installed.
+Make sure maven is correctly exported.
+
+OPTIONAL - To set up maven, run following commands:
+export JAVA_HOME=$(/usr/libexec/java_home)
+export PATH=$JAVA_HOME/jre/bin:$PATH
+export PATH=~/ReplaceWithMavenFolderLocation/bin:$PATH
+
+Note:
+The program is tested on personal computer with maven 3.3.9 and on lectura with maven 2.2.1.
+
+Make sure "pom.xml" and "src" folder are in the same directory before compiling.
+
+This program uses coreNLP from Stanford University for language processing(file included in src/main/java/edu/stanford/nlp).
+
+Command
+-Instruction
+
+mvn compile
+-To compile source code and get a "target" folder
+
+mvn exec:java
+-To run the program
+
+Programmer: Yang Hong
